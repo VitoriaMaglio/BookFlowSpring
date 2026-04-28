@@ -1,4 +1,4 @@
-📚 BookFlow API
+📚 **BookFlow API**
 
 API REST desenvolvida em Java com Spring Boot para gestão de uma livraria, permitindo o cadastro e consulta de livros, autores, clientes e pedidos.
 
