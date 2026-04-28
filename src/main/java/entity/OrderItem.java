@@ -2,8 +2,10 @@ package entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
+import lombok.Data;
 
 @Entity
+@Data
 public class OrderItem {
 
     @Id

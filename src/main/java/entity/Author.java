@@ -1,11 +1,12 @@
 package entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
 
 import java.util.List;
 
 @Entity
+@Data
 public class Author {
 
     @Id
