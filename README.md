@@ -2,6 +2,7 @@
 
 API REST desenvolvida em Java com Spring Boot para gestão de uma livraria, permitindo o cadastro e consulta de livros, autores, clientes e pedidos.
 
+---
 🚀 Tecnologias utilizadas
 Java 17
 Spring Boot
@@ -10,7 +11,7 @@ PostgreSQL
 Flyway (migrations)
 Lombok
 
-
+---
 📦 Funcionalidades
 CRUD de Livros
 CRUD de Autores
@@ -21,7 +22,7 @@ Filtros de busca avançados
 Paginação e ordenação
 Projections para otimização de dados
 
-
+---
 🔗 Relacionamentos
 📚 Livro ↔ Autor: N
 🛒 Pedido → Cliente: N:1
@@ -87,7 +88,7 @@ POST /books
   "authorIds": [1]
 }
 
-
+---
 📁 Estrutura do projeto
 com.api.livraria
 ├── controller
@@ -98,6 +99,7 @@ com.api.livraria
 ├── projection
 └── validation
 
+---
 Jsons para testes
 POST - Criar livro
 {
