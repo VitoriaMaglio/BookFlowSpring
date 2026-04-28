@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Create Book",
+    "method": "POST",
+    "url": "http://localhost:8080/books",
+    "body": {
+      "title": "Clean Code",
+      "rating": 4.8,
+      "price": 120.0,
+      "authorIds": [1]
+    }
+  },
+  {
+    "name": "List Books",
+    "method": "GET",
+    "url": "http://localhost:8080/books?page=0&size=5"
+  },
+  {
+    "name": "Search Books by Title",
+    "method": "GET",
+    "url": "http://localhost:8080/books/search/title?title=clean"
+  },
+  {
+    "name": "Search Books by Rating",
+    "method": "GET",
+    "url": "http://localhost:8080/books/search/rating?rating=4.1"
+  },
+  {
+    "name": "Search Books by Author",
+    "method": "GET",
+    "url": "http://localhost:8080/books/search/author?name=martin"
+  },
+  {
+    "name": "Search Books by Avg Price",
+    "method": "GET",
+    "url": "http://localhost:8080/books/search/avg-price?avgPrice=50"
+  },
+  {
+    "name": "Books Projection",
+    "method": "GET",
+    "url": "http://localhost:8080/books/simple?page=0&size=5"
+  },
+  {
+    "name": "Create Author",
+    "method": "POST",
+    "url": "http://localhost:8080/authors",
+    "body": {
+      "name": "Robert Martin"
+    }
+  },
+  {
+    "name": "List Authors",
+    "method": "GET",
+    "url": "http://localhost:8080/authors?page=0&size=5"
+  },
+  {
+    "name": "Search Author",
+    "method": "GET",
+    "url": "http://localhost:8080/authors/search?name=martin"
+  },
+  {
+    "name": "Create Customer",
+    "method": "POST",
+    "url": "http://localhost:8080/customers",
+    "body": {
+      "name": "Maria Silva",
+      "email": "maria@email.com"
+    }
+  },
+  {
+    "name": "List Customers",
+    "method": "GET",
+    "url": "http://localhost:8080/customers?page=0&size=5"
+  },
+  {
+    "name": "Search Customer",
+    "method": "GET",
+    "url": "http://localhost:8080/customers/search?name=maria"
+  },
+  {
+    "name": "List Orders",
+    "method": "GET",
+    "url": "http://localhost:8080/orders?page=0&size=5"
+  },
+  {
+    "name": "Orders by Customer",
+    "method": "GET",
+    "url": "http://localhost:8080/orders/customer?customerId=1"
+  },
+  {
+    "name": "Orders Projection",
+    "method": "GET",
+    "url": "http://localhost:8080/orders/summary?page=0&size=5"
+  },
+  {
+    "name": "Orders by Book",
+    "method": "GET",
+    "url": "http://localhost:8080/orders/search/book?bookId=1"
+  }
+]
