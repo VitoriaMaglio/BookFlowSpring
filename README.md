@@ -102,6 +102,8 @@ com.api.livraria
 ---
 Jsons para testes
 POST - Criar livro
+
+
 {
   "method": "POST",
   "url": "http://localhost:8080/books",
@@ -112,36 +114,50 @@ POST - Criar livro
     "authorIds": [1]
   }
 }
+
+
 GET - Listar livros
 {
   "method": "GET",
   "url": "http://localhost:8080/books?page=0&size=5"
 }
+
+
 GET - Buscar por título
 {
   "method": "GET",
   "url": "http://localhost:8080/books/search/title?title=clean"
 }
+
+
 GET - Buscar por avaliação
 {
   "method": "GET",
   "url": "http://localhost:8080/books/search/rating?rating=4.1"
 }
+
+
 GET - Buscar por autor
 {
   "method": "GET",
   "url": "http://localhost:8080/books/search/author?name=martin"
 }
+
+
 GET - Buscar por média de preço
 {
   "method": "GET",
   "url": "http://localhost:8080/books/search/avg-price?avgPrice=50"
 }
+
+
 GET - Projection (BookSimpleProjection)
 {
   "method": "GET",
   "url": "http://localhost:8080/books/simple?page=0&size=5"
 }
+
+
 AUTHORS
 POST - Criar autor
 {
@@ -151,16 +167,22 @@ POST - Criar autor
     "name": "Robert Martin"
   }
 }
+
+
 GET - Listar autores
 {
   "method": "GET",
   "url": "http://localhost:8080/authors?page=0&size=5"
 }
+
+
 GET - Buscar autor
 {
   "method": "GET",
   "url": "http://localhost:8080/authors/search?name=martin"
 }
+
+
 CUSTOMERS
 POST - Criar cliente
 {
@@ -170,33 +192,45 @@ POST - Criar cliente
     "name": "Maria Silva",
     "email": "maria@email.com"
   }
-}
+} 
+
+
 GET - Listar clientes
 {
   "method": "GET",
   "url": "http://localhost:8080/customers?page=0&size=5"
 }
+
+
 GET - Buscar cliente
 {
   "method": "GET",
   "url": "http://localhost:8080/customers/search?name=maria"
 }
+
+
 ORDERS
 GET - Listar pedidos
 {
   "method": "GET",
   "url": "http://localhost:8080/orders?page=0&size=5"
 }
+
+
 GET - Buscar pedidos por cliente
 {
   "method": "GET",
   "url": "http://localhost:8080/orders/customer?customerId=1"
 }
+
+
 GET - Projection (OrderSummaryProjection)
 {
   "method": "GET",
   "url": "http://localhost:8080/orders/summary?page=0&size=5"
 }
+
+
 GET - Buscar pedidos por livro
 {
   "method": "GET",
