@@ -3,10 +3,12 @@ package dto;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.Setter;
+import validation.ValidBook;
 
 import java.util.List;
 @Getter
 @Setter
+@ValidBook
 public class BookCreateDTO {
 
     @NotBlank

@@ -32,4 +32,12 @@ public class OrderControler {
         return repo.findOrderSummary(pageable);
     }
 
+    @GetMapping("/search/book")
+    public Page<Order> findByBook(
+            @RequestParam Long bookId,
+            Pageable pageable) {
+
+        return repo.findOrdersByBook(bookId, pageable);
+    }
+
 }

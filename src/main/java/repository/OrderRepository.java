@@ -5,6 +5,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import projection.OrderSummaryProjection;
 
 import java.time.LocalDateTime;
@@ -23,5 +24,12 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
         FROM Order o JOIN o.customer c
     """)
     Page<OrderSummaryProjection> findOrderSummary(Pageable pageable);
+
+    @Query("""
+    SELECT DISTINCT o FROM Order o
+    JOIN o.items i
+    WHERE i.book.id = :bookId
+""")
+    Page<Order> findOrdersByBook(@Param("bookId") Long bookId, Pageable pageable);
 
 }
