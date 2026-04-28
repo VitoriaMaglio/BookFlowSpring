@@ -1,0 +1,6 @@
+CREATE TABLE book (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    rating DOUBLE PRECISION,
+    price DECIMAL(10,2)
+);
